@@ -1,0 +1,27 @@
+/** asignando comentarios */
+
+/** Llamando al selector por etiqueta*/
+body{
+    /** propiedad para color de fondo*/
+    background-color: beige;
+}
+header{
+    /** para asignar borde a la caja */
+    border: 1px solid black;
+    padding: 10px;
+}
+section{
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 25;
+/** margin: top, left, right, button*/
+}
+/** llamando al selector class */
+.texto{
+    /** propiedad para asignar color al texto */
+    color: cornflowerblue;
+}
+/** Llamando al selector id */
+#parrafo{
+    color: bisque;
+}

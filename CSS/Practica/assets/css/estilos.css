@@ -1,0 +1,194 @@
+/** @import (para importar la fuente)*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+/** selector universal para reseteo */
+*{
+    /** con el universal solo podemos tener margin, padding*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alkatra', cursive;
+}
+header{
+    /** Propiedad para imagen de fondo*/
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1459.206824578193 457.9300326683591L1330.9408384551884 354.06228510393777 1227.0730908907672 482.32827122694226 1355.3390770137717 586.1960187913636z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M265.5579233158451 292.431660248297L277.41707504214435 389.0167002491909 374.0021150430382 377.1575485228916 362.1429633167389 280.57250852199775z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1066.6944773616117 278.93164803468574L1050.7718932247942 215.0696511661178 962.940189990351 270.884525805628z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M603.1936679016837 125.98566756526537L530.6456910437681 71.31684577721927 484.9164467906568 207.47322195811572z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M539.8388096308076 73.32500220457482L454.1526558712643 3.9377230242042884 384.76537669089373 89.62387678374766 470.45153045043713 159.0111559641182z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M612.85%2c383.475C643.121%2c383.489%2c672.742%2c372.501%2c689.448%2c347.258C708.071%2c319.118%2c714.288%2c283.377%2c699.006%2c253.292C682.307%2c220.417%2c649.722%2c196.708%2c612.85%2c196.465C575.603%2c196.219%2c541.556%2c218.925%2c524.702%2c252.142C509.222%2c282.651%2c517.31%2c318.781%2c536.376%2c347.187C553.229%2c372.297%2c582.609%2c383.461%2c612.85%2c383.475' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+    height: 200px; /* Asignando tamaño */
+    color: aliceblue;
+    text-align: center; /* Para alinear el texto */
+    line-height: 200px; /* Para alinear el texto al centro o donde quiera*/
+}
+nav{
+    background-color: #2FBDCE;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none; /* Sin estilo*/
+    margin: 30px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none; /* sin estilo*/
+}
+/* Agregando estilos al contenido principal*/
+.box-center{
+    width: 80%; /* tamaño de la imagen en base a la página*/
+    margin: 70px; /** tomar margen automatico del navegador*/
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.titulo{
+    text-align: center;
+    font-size: 2rem; /** 1rem: 16 pixeles*/
+    color: black;
+
+}
+.box-section{
+    display: flex; /**Contenedor flexible*/
+    justify-content: space-around;
+}
+#image{
+    width: 60%;
+}
+footer{
+    background-color: bisque;
+    font-size: large;
+    align-items: center;
+}
+/**
+    display: Asigna como va trabajar un elemento
+        inline-block: elementos que se ponen en bloque y en línea
+        flex: los elementos se alinean de forma flexible
+        grid: los elementos estaran asociados en columnas y filas
+*/
+.footer_container{
+
+    display: grid;
+    /** Asignamos las columnas que queremos*/
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 50px, 30px; /**50px arriba y abajo, 0 pixeles derecha e izquierda*/
+    gap: 50px;
+    
+}
+/** diseñando el apartado de los iconos*/
+.margen{
+    margin: 60px, 0;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 30px; /** estamos con los elementos si van estar en fila y los estamos envolviendo en una sola fila*/
+}
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 147, 212);
+    border-radius: 70%;
+    color: white;
+    margin: 40px;
+}
+.footer_container .info .icons{
+    width: 20%;
+}
+.footer_container .info .icons a{
+    width: 50%;
+    height: 50%;
+}
+.footer_container .info .icons a:hover{
+    background: transparent;
+}
+/** Apartado de viajes **/
+.section-card{
+    display: flex; /** indicamos que los elementos sean flexibles**/
+    justify-content: space-around;
+    flex-flow: row wrap; /**Envuelve los elementos en una fila **/
+}
+.card{
+    width: 30%;
+    height: 300px;
+    /**colocando sombra al contenedor**/
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /** X (Horizontal), Y (Vertical), blur-radius (desenfoque), spread-radius (propagar) color **/
+    margin-bottom: 30px;
+    background-size: cover; /** Indicando que lo que haya dentro de la caja se va adaptar al tamaño de la tarjeta*/
+    background-position: center; /** Indicando el posicionamiento de los elementos de la tarjeta*/
+    transition: all .5s;
+}
+.section-card img{
+    /** */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /** Solo se utiliza para imagenes o videos para que es ajusten al tamaño del contenedor*/
+}
+.section-card .card:hover{
+    transform: scale(1.1); /** X 1.1 Y 1.1 */ 
+}
+/** Apartado de Contacto*/
+.contact-fondo{
+    background-image: url("../img/viaje4.jpg");
+    height: 30rem; /** 1rem = 16px */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -100px;
+}
+
+.formulario{
+    background-color: rgba(192, 192, 192, 0.3);
+    margin: -10rem auto 0 auto; /** Top, Right, Bottom, Left */
+    width: 95%;
+    padding: 3rem;
+}
+.form label{
+    font-weight: bold; /** Peso de la Letra */
+}
+/** Selector por atributo*/
+input[type="text"]
+input[type="email"]{
+    width: 100%;
+    height: 30px;
+    padding: 3px,10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 8px 0;
+    display: block;
+}
+input[type="submit"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 32px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+/** Aplicando media query*/
+@media(max-width:1100px){
+    .icons{
+        width: 100%;
+    }
+}
+/** Aplicando estilos para pantallas peque */
+@media(max-width:550px){
+    .box-section{
+        display: inline-block;
+        text-align: center;}
+    .footer_container{
+        grid-template-columns: 1fr;}
+    .card{
+        width: 100%;
+    }
+
+}

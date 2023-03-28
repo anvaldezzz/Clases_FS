@@ -1,0 +1,75 @@
+<!-- estructura basica de html: head, body-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Turisticos</title>
+</head>
+<body>
+    <!-- contenido que visualiza el usuario : cuerpo: header, nav, section, aside, footer-->
+    <header>
+        <h1> Lugares Turisticos de Guatemala</h1>
+    </header>
+    <nav>
+        <!-- lista desordenada-->
+        <ul>
+            <!--elementos de la lista-->
+            <!--hipervinculos-->
+            <!--Rutas absolutas servidor externo y relativas local-->
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./Isla de Flores.html">Isla de Flores</a>
+            </li>
+            <li>
+                <a href="./Rio Dulce.html">Rio Dulce</a>
+            </li>
+            <li>
+                <a href="./TIKAL.html">TIKAL</a>
+            </li>
+        </ul>
+        <!--Menu de navegacion-->
+    <!--Contenido principal de la pagina
+        <section>, <main>, <div>, <article>-->
+        
+    </nav>
+      <!--<main>: Etiqueta para nuestro contenido
+        <article>:Etiqueta para dividir nuestro contenido-->
+        <main>
+            <section>
+                    <article>
+                        <h2> Bienvenidos a nuestra pagina web</h2>
+                    </article>
+                    <article>
+                        <!-- describiendo de que se trata la pagina-->
+                        <p> En este sitio web encontraras los lugares turisticos de Guatemala.
+                            Podras visualizar imagenes, detalles y direccion de dichos lugares..
+                        </p>
+                    </article>
+                </section>
+                <section>
+                    <!-- IMAGEN
+                        src: propiedad donde colocamos la ruta de la imagen
+                        alt: propiedad donde colocamos la descripcion de la misma -->
+                    <img src="./Imagenes/Isla de flores.jpg" alt="Isla de Flores desde el aire">
+                </section>
+                <!--apartado donde no hay informacion no tan relevante-->
+                <aside>
+                    <h4> DALE CLICK AQUI</h4>
+                    <!--asignando una ruta absoluta-->
+                    <!-- La etiqueta span hacer relevancia a lo que tenemos en un a etiqueta -->
+                    <!-- target: Es una propiedad que toma como relevancia la redireccion de la ruta.
+                            _blank: redirigir la ruta en una nueva ventana-->
+                    <a href="https://htmlreference.io/" target="_blank"> DALE CLICK AQUI</a>
+                </aside>
+            </main>
+        <!-- Pie de Pagina-->
+        <footer>
+            <h1> 2023 Andre Valdez</h1>
+        </footer>
+
+</body>
+</html>
