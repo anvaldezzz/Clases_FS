@@ -1,0 +1,11 @@
+.box-img{
+    object-fit: cover;
+    height: 250px;
+}
+.img-carousel{
+    width: 200px;
+    height: 200px;
+}
+.img-carousel img{
+    object-fit: cover;
+}
